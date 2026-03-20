@@ -14,21 +14,21 @@
     }
   </style>
 
-  <!-- Card 1: Multimodal RAG -->
-  <rect class="card-border-1" x="2" y="2" width="282" height="116" rx="10"/>
-  <text class="title" x="143" y="46" text-anchor="middle" fill="#8A2BE2">Multimodal RAG</text>
-  <text class="desc"  x="143" y="70" text-anchor="middle">Retrieval-Augmented Generation</text>
-  <text class="desc"  x="143" y="88" text-anchor="middle">across text, image, and beyond</text>
+  <!-- Card 1: Web Agent & Computer Use -->
+  <rect class="card-border-2" x="2" y="2" width="282" height="116" rx="10"/>
+  <text class="title" x="143" y="46" text-anchor="middle" fill="#0078D4">Web Agent &amp; Computer Use</text>
+  <text class="desc"  x="143" y="70" text-anchor="middle">Autonomous agents that navigate</text>
+  <text class="desc"  x="143" y="88" text-anchor="middle">and operate real-world interfaces</text>
 
-  <!-- Card 2: Web Agent & Computer Use -->
-  <rect class="card-border-2" x="309" y="2" width="282" height="116" rx="10"/>
-  <text class="title" x="450" y="46" text-anchor="middle" fill="#0078D4">Web Agent &amp; Computer Use</text>
-  <text class="desc"  x="450" y="70" text-anchor="middle">Autonomous agents that navigate</text>
-  <text class="desc"  x="450" y="88" text-anchor="middle">and operate real-world interfaces</text>
+  <!-- Card 2: Proactive Agent -->
+  <rect class="card-border-3" x="309" y="2" width="282" height="116" rx="10"/>
+  <text class="title" x="450" y="46" text-anchor="middle" fill="#2E8B57">Proactive Agent</text>
+  <text class="desc"  x="450" y="70" text-anchor="middle">Agents that anticipate, plan,</text>
+  <text class="desc"  x="450" y="88" text-anchor="middle">and act without explicit instructions</text>
 
-  <!-- Card 3: Proactive Agent -->
-  <rect class="card-border-3" x="616" y="2" width="282" height="116" rx="10"/>
-  <text class="title" x="757" y="46" text-anchor="middle" fill="#2E8B57">Proactive Agent</text>
-  <text class="desc"  x="757" y="70" text-anchor="middle">Agents that anticipate, plan,</text>
-  <text class="desc"  x="757" y="88" text-anchor="middle">and act without explicit instructions</text>
+  <!-- Card 3: Multimodal RAG -->
+  <rect class="card-border-1" x="616" y="2" width="282" height="116" rx="10"/>
+  <text class="title" x="757" y="46" text-anchor="middle" fill="#8A2BE2">Multimodal RAG</text>
+  <text class="desc"  x="757" y="70" text-anchor="middle">Retrieval-Augmented Generation</text>
+  <text class="desc"  x="757" y="88" text-anchor="middle">across text, image, and beyond</text>
 </svg>

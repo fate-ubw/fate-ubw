@@ -39,7 +39,7 @@ I'm genuinely passionate about building intelligent systems that can perceive, r
     </td>
     <td width="55%" valign="top">
       <h3>GitHub Stats</h3>
-      <img src="https://github-readme-stats.vercel.app/api?username=fate-ubw&show_icons=true&theme=github&hide_border=true&include_all_commits=true&count_private=true" width="100%" />
+      <img src="https://github-readme-stats.vercel.app/api?username=fate-ubw&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" width="100%" />
     </td>
   </tr>
 </table>
