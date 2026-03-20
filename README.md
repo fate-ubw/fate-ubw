@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=6E40C9&center=true&vCenter=true&width=600&lines=Hi+there%2C+I'm+Jim Zhang+%F0%9F%91%8B;Zhang+Xuanwang+%C2%B7+%E5%BC%A0%E8%BD%A9%E6%9C%9B;PhD+Researcher+%40+NJU+AI;Building+Smarter+Agents+%F0%9F%A4%96" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=6E40C9&center=true&vCenter=true&width=600&lines=Hi+there%2C+I'm+Jim+Zhang+%F0%9F%91%8B;Zhang+Xuanwang+%C2%B7+%E5%BC%A0%E8%BD%A9%E6%9C%9B;PhD+Researcher+%40+NJU+AI;Building+Smarter+Agents+%F0%9F%A4%96" alt="Typing SVG" />
 
 <br/>
 
@@ -23,22 +23,9 @@ I'm genuinely passionate about building intelligent systems that can perceive, r
 
 ### Research Interests
 
-<table>
-  <tr>
-    <td align="center" width="200">
-      <b>Multimodal RAG</b><br/>
-      <sub>Retrieval-Augmented Generation across text, image, and beyond</sub>
-    </td>
-    <td align="center" width="200">
-      <b>Web Agent & Computer Use</b><br/>
-      <sub>Autonomous agents that navigate and operate real-world interfaces</sub>
-    </td>
-    <td align="center" width="200">
-      <b>Proactive Agent</b><br/>
-      <sub>Agents that anticipate, plan, and act without explicit instructions</sub>
-    </td>
-  </tr>
-</table>
+![Multimodal RAG](https://img.shields.io/badge/Multimodal_RAG-Retrieval--Augmented_Generation_across_text%2C_image%2C_and_beyond-8A2BE2?style=flat-square)
+![Web Agent & Computer Use](https://img.shields.io/badge/Web_Agent_%26_Computer_Use-Autonomous_agents_that_navigate_real--world_interfaces-0078D4?style=flat-square)
+![Proactive Agent](https://img.shields.io/badge/Proactive_Agent-Agents_that_anticipate%2C_plan%2C_and_act_proactively-2E8B57?style=flat-square)
 
 ---
 
@@ -50,7 +37,6 @@ I'm genuinely passionate about building intelligent systems that can perceive, r
       <ul>
         <li>📬 <b>Email:</b> <a href="mailto:zhangxuanwang@smail.nju.edu.cn">zhangxuanwang@smail.nju.edu.cn</a></li>
         <li>💬 <b>Open an issue</b> on this repo to start a conversation</li>
-        <li>🌍 <b>Location:</b> Nanjing, China</li>
       </ul>
     </td>
     <td width="55%" valign="top">
