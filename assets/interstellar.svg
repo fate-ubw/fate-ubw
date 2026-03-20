@@ -1,0 +1,220 @@
+<svg width="480" height="260" viewBox="0 0 480 260" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#1a0e2e"/>
+      <stop offset="100%" stop-color="#04030a"/>
+    </radialGradient>
+    <radialGradient id="warmGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f5c060" stop-opacity="0.45"/>
+      <stop offset="50%" stop-color="#e08020" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#e08020" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background: dark tesseract space -->
+  <rect width="480" height="260" fill="url(#bg)"/>
+
+  <!-- Stars -->
+  <g fill="white">
+    <rect x="18"  y="14" width="2" height="2" opacity="0.7"/>
+    <rect x="52"  y="6"  width="1" height="1" opacity="0.5"/>
+    <rect x="98"  y="22" width="2" height="2" opacity="0.6"/>
+    <rect x="148" y="9"  width="1" height="1" opacity="0.5"/>
+    <rect x="210" y="18" width="2" height="2" opacity="0.7"/>
+    <rect x="312" y="11" width="1" height="1" opacity="0.4"/>
+    <rect x="374" y="20" width="2" height="2" opacity="0.6"/>
+    <rect x="426" y="7"  width="1" height="1" opacity="0.5"/>
+    <rect x="458" y="17" width="2" height="2" opacity="0.7"/>
+    <rect x="32"  y="240" width="2" height="2" opacity="0.5"/>
+    <rect x="110" y="252" width="1" height="1" opacity="0.4"/>
+    <rect x="380" y="244" width="2" height="2" opacity="0.6"/>
+    <rect x="450" y="250" width="1" height="1" opacity="0.5"/>
+  </g>
+
+  <!-- Warm glow: light from Murph's room through the shelves -->
+  <ellipse cx="222" cy="148" rx="160" ry="72" fill="url(#warmGlow)">
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" repeatCount="indefinite"/>
+  </ellipse>
+  <!-- Light rays through book gaps -->
+  <rect x="208" y="64"  width="4"  height="84" fill="#f5b040" opacity="0.06"><animate attributeName="opacity" values="0.04;0.12;0.04" dur="2.8s" repeatCount="indefinite"/></rect>
+  <rect x="240" y="64"  width="3"  height="84" fill="#f5b040" opacity="0.05"><animate attributeName="opacity" values="0.03;0.09;0.03" dur="3.2s" repeatCount="indefinite"/></rect>
+
+  <!-- ── SHELF BOARD 1 (top) y=56 ── -->
+  <rect x="0" y="56" width="480" height="8" fill="#4a2e0a"/>
+  <rect x="0" y="56" width="480" height="2" fill="#7a4e2a"/>
+  <rect x="0" y="62" width="480" height="2" fill="#22100400" opacity="0.8"/>
+
+  <!-- BOOKS: top row (y: 8 – 56) -->
+  <rect x="4"   y="16" width="12" height="40" fill="#8b1a1a"/><rect x="4"   y="16" width="2" height="40" fill="#c44" opacity="0.4"/>
+  <rect x="18"  y="20" width="10" height="36" fill="#2d5a8e"/><rect x="18"  y="20" width="2" height="36" fill="#4a7fbf" opacity="0.4"/>
+  <rect x="30"  y="12" width="14" height="44" fill="#5a3e28"/><rect x="30"  y="12" width="2" height="44" fill="#8a6040" opacity="0.4"/>
+  <rect x="46"  y="18" width="10" height="38" fill="#1a5c3a"/>
+  <rect x="58"  y="22" width="8"  height="34" fill="#7a6020"/>
+  <rect x="68"  y="14" width="12" height="42" fill="#6b1a6b"/>
+  <rect x="82"  y="20" width="10" height="36" fill="#3a5a2a"/>
+  <rect x="94"  y="16" width="14" height="40" fill="#8a4a10"/>
+  <rect x="110" y="22" width="8"  height="34" fill="#1a3a6a"/>
+  <rect x="120" y="12" width="12" height="44" fill="#5a1a1a"/>
+  <rect x="134" y="18" width="10" height="38" fill="#4a7a2a"/>
+  <rect x="146" y="20" width="12" height="36" fill="#7a3a10"/>
+  <rect x="160" y="14" width="8"  height="42" fill="#2a4a7a"/>
+  <rect x="170" y="22" width="14" height="34" fill="#6a5a20"/>
+  <rect x="186" y="16" width="10" height="40" fill="#5a2a5a"/>
+  <rect x="198" y="20" width="12" height="36" fill="#2a6a3a"/>
+  <rect x="212" y="14" width="10" height="42" fill="#7a3a1a"/>
+  <rect x="224" y="18" width="12" height="38" fill="#1a4a6a"/>
+  <rect x="238" y="22" width="10" height="34" fill="#5a4a10"/>
+  <rect x="250" y="12" width="14" height="44" fill="#3a2a6a"/>
+  <rect x="266" y="18" width="10" height="38" fill="#7a1a1a"/>
+  <rect x="278" y="14" width="12" height="42" fill="#1a5a3a"/>
+  <rect x="292" y="20" width="8"  height="36" fill="#4a3a7a"/>
+  <rect x="302" y="12" width="14" height="44" fill="#7a5a10"/>
+  <rect x="318" y="18" width="10" height="38" fill="#2a4a2a"/>
+  <rect x="330" y="22" width="12" height="34" fill="#8a2a2a"/>
+  <rect x="344" y="14" width="8"  height="42" fill="#1a2a6a"/>
+  <rect x="354" y="20" width="14" height="36" fill="#5a4a20"/>
+  <rect x="370" y="16" width="10" height="40" fill="#3a6a3a"/>
+  <rect x="382" y="22" width="12" height="34" fill="#7a3a5a"/>
+  <rect x="396" y="12" width="8"  height="44" fill="#4a2a1a"/>
+  <rect x="406" y="18" width="14" height="38" fill="#2a5a7a"/>
+  <rect x="422" y="20" width="10" height="36" fill="#6a4a10"/>
+  <rect x="434" y="14" width="12" height="42" fill="#5a1a3a"/>
+  <rect x="448" y="22" width="8"  height="34" fill="#2a3a5a"/>
+  <rect x="458" y="16" width="22" height="40" fill="#7a5a2a"/>
+
+  <!-- ── SHELF BOARD 2 (middle) y=152 ── -->
+  <rect x="0" y="152" width="480" height="8" fill="#4a2e0a"/>
+  <rect x="0" y="152" width="480" height="2" fill="#7a4e2a"/>
+  <rect x="0" y="158" width="480" height="2" fill="#220d0200" opacity="0.8"/>
+
+  <!-- COOPER SILHOUETTE: dark pixel figure in the gap x=210–244, y=80–148 -->
+  <!-- Head (16x16) -->
+  <rect x="215" y="82"  width="16" height="16" fill="#100808"/>
+  <!-- Neck -->
+  <rect x="219" y="98"  width="8"  height="4"  fill="#100808"/>
+  <!-- Body -->
+  <rect x="211" y="102" width="24" height="30" fill="#0e0606"/>
+  <!-- Left arm -->
+  <rect x="203" y="106" width="8"  height="22" fill="#0e0606"/>
+  <!-- Right arm -->
+  <rect x="235" y="106" width="8"  height="22" fill="#0e0606"/>
+  <!-- Legs -->
+  <rect x="213" y="132" width="10" height="16" fill="#0e0606"/>
+  <rect x="225" y="132" width="10" height="16" fill="#0e0606"/>
+  <!-- Warm rim light on Cooper's left edge -->
+  <rect x="211" y="82"  width="2"  height="66" fill="#f5a030" opacity="0.25"/>
+  <rect x="215" y="82"  width="2"  height="16" fill="#f5a030" opacity="0.15"/>
+
+  <!-- BOOKS: middle row (y: 64 – 152), gap at x=210–244 for Cooper -->
+  <rect x="4"   y="68" width="12" height="84" fill="#2d5a8e"/>
+  <rect x="18"  y="72" width="14" height="80" fill="#8b2a1a"/>
+  <rect x="34"  y="64" width="10" height="88" fill="#1a5c3a"/>
+  <rect x="46"  y="76" width="12" height="76" fill="#5a3e28"/>
+  <rect x="60"  y="68" width="10" height="84" fill="#6b1a6b"/>
+  <rect x="72"  y="72" width="14" height="80" fill="#3a5a2a"/>
+  <rect x="88"  y="64" width="8"  height="88" fill="#7a6020"/>
+  <rect x="98"  y="70" width="12" height="82" fill="#1a3a6a"/>
+  <rect x="112" y="68" width="10" height="84" fill="#8a4a10"/>
+  <rect x="124" y="76" width="14" height="76" fill="#4a7a2a"/>
+  <rect x="140" y="64" width="10" height="88" fill="#5a1a1a"/>
+  <rect x="152" y="70" width="12" height="82" fill="#2a4a7a"/>
+  <rect x="166" y="68" width="10" height="84" fill="#7a3a10"/>
+  <rect x="178" y="76" width="14" height="76" fill="#1a5a3a"/>
+  <rect x="194" y="64" width="16" height="88" fill="#6a2a6a"/>
+  <!-- gap x=210–244 (Cooper is here) -->
+  <rect x="244" y="68" width="12" height="84" fill="#4a3a7a">
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-6;0,0" dur="2.4s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  </rect>
+  <rect x="258" y="72" width="10" height="80" fill="#7a5a10"/>
+  <rect x="270" y="64" width="14" height="88" fill="#2a6a3a"/>
+  <rect x="286" y="76" width="10" height="76" fill="#8a2a2a">
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-8;0,0" dur="3.6s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  </rect>
+  <rect x="298" y="68" width="12" height="84" fill="#1a4a7a"/>
+  <rect x="312" y="64" width="14" height="88" fill="#5a4a20"/>
+  <rect x="328" y="72" width="10" height="80" fill="#3a6a3a">
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-5;0,0" dur="4.2s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  </rect>
+  <rect x="340" y="68" width="12" height="84" fill="#7a3a5a"/>
+  <rect x="354" y="76" width="10" height="76" fill="#4a2a1a"/>
+  <rect x="366" y="64" width="14" height="88" fill="#2a5a7a"/>
+  <rect x="382" y="70" width="10" height="82" fill="#6a4a10"/>
+  <rect x="394" y="68" width="12" height="84" fill="#5a1a3a"/>
+  <rect x="408" y="76" width="8"  height="76" fill="#2a3a5a"/>
+  <rect x="418" y="64" width="14" height="88" fill="#7a5a2a"/>
+  <rect x="434" y="70" width="10" height="82" fill="#3a1a5a"/>
+  <rect x="446" y="68" width="12" height="84" fill="#4a6a2a"/>
+  <rect x="460" y="76" width="20" height="76" fill="#7a2a2a"/>
+
+  <!-- ── SHELF BOARD 3 (bottom) y=248 ── -->
+  <rect x="0" y="248" width="480" height="8" fill="#4a2e0a"/>
+  <rect x="0" y="248" width="480" height="2" fill="#7a4e2a"/>
+
+  <!-- BOOKS: bottom row (y: 164 – 248) -->
+  <rect x="4"   y="172" width="14" height="76" fill="#8b1a1a"/>
+  <rect x="20"  y="168" width="10" height="80" fill="#2d5a8e"/>
+  <rect x="32"  y="176" width="12" height="72" fill="#1a5c3a"/>
+  <rect x="46"  y="164" width="14" height="84" fill="#5a3e28"/>
+  <rect x="62"  y="172" width="10" height="76" fill="#6b1a6b"/>
+  <rect x="74"  y="168" width="12" height="80" fill="#7a6020"/>
+  <rect x="88"  y="176" width="8"  height="72" fill="#3a5a2a"/>
+  <rect x="98"  y="164" width="14" height="84" fill="#1a3a6a"/>
+  <rect x="114" y="172" width="10" height="76" fill="#8a4a10"/>
+  <rect x="126" y="168" width="12" height="80" fill="#4a7a2a"/>
+  <rect x="140" y="176" width="10" height="72" fill="#7a1a1a"/>
+  <rect x="152" y="164" width="14" height="84" fill="#2a4a7a"/>
+  <rect x="168" y="172" width="10" height="76" fill="#6a5a20"/>
+  <rect x="180" y="168" width="12" height="80" fill="#5a2a5a"/>
+  <rect x="194" y="176" width="8"  height="72" fill="#2a6a3a"/>
+  <rect x="204" y="164" width="14" height="84" fill="#7a3a10"/>
+  <rect x="220" y="172" width="10" height="76" fill="#1a5a8a"/>
+  <rect x="232" y="168" width="12" height="80" fill="#5a4a10"/>
+  <rect x="246" y="176" width="14" height="72" fill="#3a2a6a"/>
+  <rect x="262" y="164" width="10" height="84" fill="#7a4a2a"/>
+  <rect x="274" y="172" width="12" height="76" fill="#2a5a2a"/>
+  <rect x="288" y="168" width="8"  height="80" fill="#8a2a4a"/>
+  <rect x="298" y="176" width="14" height="72" fill="#1a3a5a"/>
+  <rect x="314" y="164" width="10" height="84" fill="#6a5a2a"/>
+  <rect x="326" y="172" width="12" height="76" fill="#4a1a4a"/>
+  <rect x="340" y="168" width="10" height="80" fill="#2a6a4a"/>
+  <rect x="352" y="176" width="14" height="72" fill="#7a3a2a"/>
+  <rect x="368" y="164" width="10" height="84" fill="#1a4a6a"/>
+  <rect x="380" y="172" width="12" height="76" fill="#5a4a1a"/>
+  <rect x="394" y="168" width="8"  height="80" fill="#3a1a4a"/>
+  <rect x="404" y="176" width="14" height="72" fill="#6a3a1a"/>
+  <rect x="420" y="164" width="10" height="84" fill="#2a4a6a"/>
+  <rect x="432" y="172" width="12" height="76" fill="#7a5a2a"/>
+  <rect x="446" y="168" width="10" height="80" fill="#4a2a5a"/>
+  <rect x="458" y="176" width="22" height="72" fill="#2a5a3a"/>
+
+  <!-- Floating dust particles -->
+  <circle cx="160" cy="95"  r="1.5" fill="#f5d090" opacity="0">
+    <animate attributeName="cy"      values="95;72;95"   dur="4s"   repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.55;0"   dur="4s"   repeatCount="indefinite"/>
+  </circle>
+  <circle cx="278" cy="108" r="1"   fill="#f5d090" opacity="0">
+    <animate attributeName="cy"      values="108;82;108" dur="5.2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.45;0"   dur="5.2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="320" cy="85"  r="1.5" fill="#f5d090" opacity="0">
+    <animate attributeName="cy"      values="85;60;85"   dur="3.6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.65;0"   dur="3.6s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="188" cy="118" r="1"   fill="#f5d090" opacity="0">
+    <animate attributeName="cy"      values="118;90;118" dur="6s"   repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.4;0"    dur="6s"   repeatCount="indefinite"/>
+  </circle>
+  <circle cx="355" cy="100" r="1"   fill="#f5d090" opacity="0">
+    <animate attributeName="cy"      values="100;75;100" dur="4.8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.5;0"    dur="4.8s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Cooper warm rim-light pulse -->
+  <ellipse cx="223" cy="118" rx="18" ry="38" fill="#f5a030" opacity="0.06">
+    <animate attributeName="opacity" values="0.04;0.11;0.04" dur="2.8s" repeatCount="indefinite"/>
+  </ellipse>
+</svg>
