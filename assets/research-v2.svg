@@ -23,8 +23,8 @@
   <!-- Card 2: Proactive Agent -->
   <rect class="card-border-3" x="309" y="2" width="282" height="116" rx="10"/>
   <text class="title" x="450" y="46" text-anchor="middle" fill="#2E8B57">Proactive Agent</text>
-  <text class="desc"  x="450" y="70" text-anchor="middle">Agents that anticipate, plan,</text>
-  <text class="desc"  x="450" y="88" text-anchor="middle">and act without explicit instructions</text>
+  <text class="desc"  x="450" y="70" text-anchor="middle">Understanding what humans are doing</text>
+  <text class="desc"  x="450" y="88" text-anchor="middle">and acting before being asked</text>
 
   <!-- Card 3: Multimodal RAG -->
   <rect class="card-border-1" x="616" y="2" width="282" height="116" rx="10"/>
