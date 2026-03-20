@@ -23,9 +23,7 @@ I'm genuinely passionate about building intelligent systems that can perceive, r
 
 ### Research Interests
 
-![Multimodal RAG](https://img.shields.io/badge/Multimodal_RAG-Retrieval--Augmented_Generation_across_text%2C_image%2C_and_beyond-8A2BE2?style=flat-square)
-![Web Agent & Computer Use](https://img.shields.io/badge/Web_Agent_%26_Computer_Use-Autonomous_agents_that_navigate_real--world_interfaces-0078D4?style=flat-square)
-![Proactive Agent](https://img.shields.io/badge/Proactive_Agent-Agents_that_anticipate%2C_plan%2C_and_act_proactively-2E8B57?style=flat-square)
+<img src="assets/research-interests.svg" width="100%" />
 
 ---
 

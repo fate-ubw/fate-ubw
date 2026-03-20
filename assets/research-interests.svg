@@ -1,0 +1,34 @@
+<svg width="900" height="130" viewBox="0 0 900 130" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .card-bg { fill: none; }
+    .card-border-1 { stroke: #8A2BE2; stroke-width: 1.5; fill: none; }
+    .card-border-2 { stroke: #0078D4; stroke-width: 1.5; fill: none; }
+    .card-border-3 { stroke: #2E8B57; stroke-width: 1.5; fill: none; }
+    .title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 15px; font-weight: 700; }
+    .desc  { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 12px; }
+    @media (prefers-color-scheme: light) {
+      .desc { fill: #57606a; }
+    }
+    @media (prefers-color-scheme: dark) {
+      .desc { fill: #8b949e; }
+    }
+  </style>
+
+  <!-- Card 1: Multimodal RAG -->
+  <rect class="card-border-1" x="2" y="2" width="282" height="116" rx="10"/>
+  <text class="title" x="143" y="46" text-anchor="middle" fill="#8A2BE2">Multimodal RAG</text>
+  <text class="desc"  x="143" y="70" text-anchor="middle">Retrieval-Augmented Generation</text>
+  <text class="desc"  x="143" y="88" text-anchor="middle">across text, image, and beyond</text>
+
+  <!-- Card 2: Web Agent & Computer Use -->
+  <rect class="card-border-2" x="309" y="2" width="282" height="116" rx="10"/>
+  <text class="title" x="450" y="46" text-anchor="middle" fill="#0078D4">Web Agent &amp; Computer Use</text>
+  <text class="desc"  x="450" y="70" text-anchor="middle">Autonomous agents that navigate</text>
+  <text class="desc"  x="450" y="88" text-anchor="middle">and operate real-world interfaces</text>
+
+  <!-- Card 3: Proactive Agent -->
+  <rect class="card-border-3" x="616" y="2" width="282" height="116" rx="10"/>
+  <text class="title" x="757" y="46" text-anchor="middle" fill="#2E8B57">Proactive Agent</text>
+  <text class="desc"  x="757" y="70" text-anchor="middle">Agents that anticipate, plan,</text>
+  <text class="desc"  x="757" y="88" text-anchor="middle">and act without explicit instructions</text>
+</svg>
