@@ -9,6 +9,10 @@
 
 </div>
 
+<div align="center">
+  <img src="assets/interstellar.svg" width="100%" />
+</div>
+
 ---
 
 ### About Me
