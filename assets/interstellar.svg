@@ -1,220 +1,211 @@
-<svg width="480" height="260" viewBox="0 0 480 260" xmlns="http://www.w3.org/2000/svg">
+<svg width="480" height="210" viewBox="0 0 480 210" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <radialGradient id="bg" cx="50%" cy="50%" r="70%">
       <stop offset="0%" stop-color="#1a0e2e"/>
       <stop offset="100%" stop-color="#04030a"/>
     </radialGradient>
     <radialGradient id="warmGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#f5c060" stop-opacity="0.45"/>
-      <stop offset="50%" stop-color="#e08020" stop-opacity="0.15"/>
+      <stop offset="0%" stop-color="#f5c060" stop-opacity="0.5"/>
+      <stop offset="50%" stop-color="#e08020" stop-opacity="0.18"/>
       <stop offset="100%" stop-color="#e08020" stop-opacity="0"/>
     </radialGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="4" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
+    <radialGradient id="cooperAura" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f5a030" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#f5a030" stop-opacity="0"/>
+    </radialGradient>
   </defs>
 
-  <!-- Background: dark tesseract space -->
-  <rect width="480" height="260" fill="url(#bg)"/>
+  <!-- Background -->
+  <rect width="480" height="210" fill="url(#bg)"/>
 
-  <!-- Stars -->
-  <g fill="white">
-    <rect x="18"  y="14" width="2" height="2" opacity="0.7"/>
-    <rect x="52"  y="6"  width="1" height="1" opacity="0.5"/>
-    <rect x="98"  y="22" width="2" height="2" opacity="0.6"/>
-    <rect x="148" y="9"  width="1" height="1" opacity="0.5"/>
-    <rect x="210" y="18" width="2" height="2" opacity="0.7"/>
-    <rect x="312" y="11" width="1" height="1" opacity="0.4"/>
-    <rect x="374" y="20" width="2" height="2" opacity="0.6"/>
-    <rect x="426" y="7"  width="1" height="1" opacity="0.5"/>
-    <rect x="458" y="17" width="2" height="2" opacity="0.7"/>
-    <rect x="32"  y="240" width="2" height="2" opacity="0.5"/>
-    <rect x="110" y="252" width="1" height="1" opacity="0.4"/>
-    <rect x="380" y="244" width="2" height="2" opacity="0.6"/>
-    <rect x="450" y="250" width="1" height="1" opacity="0.5"/>
-  </g>
+  <!-- Stars with twinkle -->
+  <rect x="18"  y="10" width="2" height="2" fill="white" opacity="0.6"><animate attributeName="opacity" values="0.6;0.2;0.6" dur="3.1s" repeatCount="indefinite"/></rect>
+  <rect x="52"  y="5"  width="1" height="1" fill="white" opacity="0.5"><animate attributeName="opacity" values="0.5;0.1;0.5" dur="4.4s" repeatCount="indefinite"/></rect>
+  <rect x="98"  y="18" width="2" height="2" fill="white" opacity="0.7"><animate attributeName="opacity" values="0.7;0.3;0.7" dur="2.8s" repeatCount="indefinite"/></rect>
+  <rect x="148" y="7"  width="1" height="1" fill="white" opacity="0.5"><animate attributeName="opacity" values="0.5;0.15;0.5" dur="5.2s" repeatCount="indefinite"/></rect>
+  <rect x="310" y="9"  width="1" height="1" fill="white" opacity="0.4"><animate attributeName="opacity" values="0.4;0.1;0.4" dur="3.7s" repeatCount="indefinite"/></rect>
+  <rect x="374" y="16" width="2" height="2" fill="white" opacity="0.6"><animate attributeName="opacity" values="0.6;0.2;0.6" dur="4.1s" repeatCount="indefinite"/></rect>
+  <rect x="426" y="6"  width="1" height="1" fill="white" opacity="0.5"><animate attributeName="opacity" values="0.5;0.1;0.5" dur="3.3s" repeatCount="indefinite"/></rect>
+  <rect x="458" y="14" width="2" height="2" fill="white" opacity="0.7"><animate attributeName="opacity" values="0.7;0.25;0.7" dur="2.6s" repeatCount="indefinite"/></rect>
+  <rect x="34"  y="195" width="2" height="2" fill="white" opacity="0.5"><animate attributeName="opacity" values="0.5;0.1;0.5" dur="5.8s" repeatCount="indefinite"/></rect>
+  <rect x="390" y="198" width="2" height="2" fill="white" opacity="0.6"><animate attributeName="opacity" values="0.6;0.2;0.6" dur="4.9s" repeatCount="indefinite"/></rect>
+  <rect x="450" y="193" width="1" height="1" fill="white" opacity="0.4"><animate attributeName="opacity" values="0.4;0.1;0.4" dur="6.1s" repeatCount="indefinite"/></rect>
 
-  <!-- Warm glow: light from Murph's room through the shelves -->
-  <ellipse cx="222" cy="148" rx="160" ry="72" fill="url(#warmGlow)">
+  <!-- Warm ambient glow (Murph's room light) -->
+  <ellipse cx="222" cy="118" rx="160" ry="60" fill="url(#warmGlow)">
     <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" repeatCount="indefinite"/>
   </ellipse>
-  <!-- Light rays through book gaps -->
-  <rect x="208" y="64"  width="4"  height="84" fill="#f5b040" opacity="0.06"><animate attributeName="opacity" values="0.04;0.12;0.04" dur="2.8s" repeatCount="indefinite"/></rect>
-  <rect x="240" y="64"  width="3"  height="84" fill="#f5b040" opacity="0.05"><animate attributeName="opacity" values="0.03;0.09;0.03" dur="3.2s" repeatCount="indefinite"/></rect>
 
-  <!-- ── SHELF BOARD 1 (top) y=56 ── -->
-  <rect x="0" y="56" width="480" height="8" fill="#4a2e0a"/>
-  <rect x="0" y="56" width="480" height="2" fill="#7a4e2a"/>
-  <rect x="0" y="62" width="480" height="2" fill="#22100400" opacity="0.8"/>
+  <!-- Light rays through book gaps – more of them now -->
+  <rect x="14"  y="57" width="2" height="68" fill="#f5b040"><animate attributeName="opacity" values="0.02;0.08;0.02" dur="3.1s" repeatCount="indefinite"/></rect>
+  <rect x="48"  y="57" width="2" height="68" fill="#f5b040"><animate attributeName="opacity" values="0.03;0.10;0.03" dur="2.4s" repeatCount="indefinite"/></rect>
+  <rect x="90"  y="57" width="2" height="68" fill="#f5b040"><animate attributeName="opacity" values="0.02;0.07;0.02" dur="4.2s" repeatCount="indefinite"/></rect>
+  <rect x="135" y="57" width="2" height="68" fill="#f5b040"><animate attributeName="opacity" values="0.03;0.09;0.03" dur="3.6s" repeatCount="indefinite"/></rect>
+  <rect x="163" y="57" width="2" height="68" fill="#f5b040"><animate attributeName="opacity" values="0.02;0.11;0.02" dur="2.9s" repeatCount="indefinite"/></rect>
+  <rect x="208" y="57" width="3" height="68" fill="#f5c050"><animate attributeName="opacity" values="0.05;0.18;0.05" dur="2.6s" repeatCount="indefinite"/></rect>
+  <rect x="241" y="57" width="2" height="68" fill="#f5c050"><animate attributeName="opacity" values="0.04;0.15;0.04" dur="3.0s" repeatCount="indefinite"/></rect>
+  <rect x="285" y="57" width="2" height="68" fill="#f5b040"><animate attributeName="opacity" values="0.02;0.08;0.02" dur="3.8s" repeatCount="indefinite"/></rect>
+  <rect x="340" y="57" width="2" height="68" fill="#f5b040"><animate attributeName="opacity" values="0.03;0.10;0.03" dur="4.5s" repeatCount="indefinite"/></rect>
+  <rect x="398" y="57" width="2" height="68" fill="#f5b040"><animate attributeName="opacity" values="0.02;0.07;0.02" dur="3.2s" repeatCount="indefinite"/></rect>
 
-  <!-- BOOKS: top row (y: 8 – 56) -->
-  <rect x="4"   y="16" width="12" height="40" fill="#8b1a1a"/><rect x="4"   y="16" width="2" height="40" fill="#c44" opacity="0.4"/>
-  <rect x="18"  y="20" width="10" height="36" fill="#2d5a8e"/><rect x="18"  y="20" width="2" height="36" fill="#4a7fbf" opacity="0.4"/>
-  <rect x="30"  y="12" width="14" height="44" fill="#5a3e28"/><rect x="30"  y="12" width="2" height="44" fill="#8a6040" opacity="0.4"/>
-  <rect x="46"  y="18" width="10" height="38" fill="#1a5c3a"/>
-  <rect x="58"  y="22" width="8"  height="34" fill="#7a6020"/>
-  <rect x="68"  y="14" width="12" height="42" fill="#6b1a6b"/>
-  <rect x="82"  y="20" width="10" height="36" fill="#3a5a2a"/>
-  <rect x="94"  y="16" width="14" height="40" fill="#8a4a10"/>
-  <rect x="110" y="22" width="8"  height="34" fill="#1a3a6a"/>
-  <rect x="120" y="12" width="12" height="44" fill="#5a1a1a"/>
-  <rect x="134" y="18" width="10" height="38" fill="#4a7a2a"/>
-  <rect x="146" y="20" width="12" height="36" fill="#7a3a10"/>
-  <rect x="160" y="14" width="8"  height="42" fill="#2a4a7a"/>
-  <rect x="170" y="22" width="14" height="34" fill="#6a5a20"/>
-  <rect x="186" y="16" width="10" height="40" fill="#5a2a5a"/>
-  <rect x="198" y="20" width="12" height="36" fill="#2a6a3a"/>
-  <rect x="212" y="14" width="10" height="42" fill="#7a3a1a"/>
-  <rect x="224" y="18" width="12" height="38" fill="#1a4a6a"/>
-  <rect x="238" y="22" width="10" height="34" fill="#5a4a10"/>
-  <rect x="250" y="12" width="14" height="44" fill="#3a2a6a"/>
-  <rect x="266" y="18" width="10" height="38" fill="#7a1a1a"/>
-  <rect x="278" y="14" width="12" height="42" fill="#1a5a3a"/>
-  <rect x="292" y="20" width="8"  height="36" fill="#4a3a7a"/>
-  <rect x="302" y="12" width="14" height="44" fill="#7a5a10"/>
-  <rect x="318" y="18" width="10" height="38" fill="#2a4a2a"/>
-  <rect x="330" y="22" width="12" height="34" fill="#8a2a2a"/>
-  <rect x="344" y="14" width="8"  height="42" fill="#1a2a6a"/>
-  <rect x="354" y="20" width="14" height="36" fill="#5a4a20"/>
-  <rect x="370" y="16" width="10" height="40" fill="#3a6a3a"/>
-  <rect x="382" y="22" width="12" height="34" fill="#7a3a5a"/>
-  <rect x="396" y="12" width="8"  height="44" fill="#4a2a1a"/>
-  <rect x="406" y="18" width="14" height="38" fill="#2a5a7a"/>
-  <rect x="422" y="20" width="10" height="36" fill="#6a4a10"/>
-  <rect x="434" y="14" width="12" height="42" fill="#5a1a3a"/>
-  <rect x="448" y="22" width="8"  height="34" fill="#2a3a5a"/>
-  <rect x="458" y="16" width="22" height="40" fill="#7a5a2a"/>
+  <!-- ── SHELF BOARD 1 y=50 ── -->
+  <rect x="0" y="50" width="480" height="7" fill="#4a2e0a"/>
+  <rect x="0" y="50" width="480" height="2" fill="#7a4e2a"/>
+  <!-- shelf glow -->
+  <rect x="0" y="55" width="480" height="2" fill="#f5a030" opacity="0.07"><animate attributeName="opacity" values="0.05;0.12;0.05" dur="3s" repeatCount="indefinite"/></rect>
 
-  <!-- ── SHELF BOARD 2 (middle) y=152 ── -->
-  <rect x="0" y="152" width="480" height="8" fill="#4a2e0a"/>
-  <rect x="0" y="152" width="480" height="2" fill="#7a4e2a"/>
-  <rect x="0" y="158" width="480" height="2" fill="#220d0200" opacity="0.8"/>
+  <!-- BOOKS: top row (y: 5–50) -->
+  <rect x="4"   y="14" width="12" height="36" fill="#8b1a1a"/><rect x="4"   y="14" width="2" height="36" fill="#c44" opacity="0.4"/>
+  <rect x="18"  y="18" width="10" height="32" fill="#2d5a8e"/><rect x="18"  y="18" width="2" height="32" fill="#4a7fbf" opacity="0.4"/>
+  <rect x="30"  y="8"  width="14" height="42" fill="#5a3e28"/><rect x="30"  y="8"  width="2" height="42" fill="#8a6040" opacity="0.4"/>
+  <rect x="46"  y="16" width="10" height="34" fill="#1a5c3a"/>
+  <rect x="58"  y="20" width="8"  height="30" fill="#7a6020"/>
+  <rect x="68"  y="10" width="12" height="40" fill="#6b1a6b"/>
+  <rect x="82"  y="18" width="10" height="32" fill="#3a5a2a"/>
+  <rect x="94"  y="14" width="14" height="36" fill="#8a4a10"/>
+  <rect x="110" y="20" width="8"  height="30" fill="#1a3a6a"/>
+  <rect x="120" y="8"  width="12" height="42" fill="#5a1a1a"/>
+  <rect x="134" y="16" width="10" height="34" fill="#4a7a2a"/>
+  <rect x="146" y="18" width="12" height="32" fill="#7a3a10"/>
+  <rect x="160" y="10" width="8"  height="40" fill="#2a4a7a"/>
+  <rect x="170" y="20" width="14" height="30" fill="#6a5a20"/>
+  <rect x="186" y="14" width="10" height="36" fill="#5a2a5a"/>
+  <rect x="198" y="18" width="12" height="32" fill="#2a6a3a"/>
+  <rect x="212" y="10" width="10" height="40" fill="#7a3a1a"/>
+  <rect x="224" y="16" width="12" height="34" fill="#1a4a6a"/>
+  <rect x="238" y="20" width="10" height="30" fill="#5a4a10"/>
+  <rect x="250" y="8"  width="14" height="42" fill="#3a2a6a"/>
+  <rect x="266" y="16" width="10" height="34" fill="#7a1a1a"/>
+  <rect x="278" y="10" width="12" height="40" fill="#1a5a3a"/>
+  <rect x="292" y="18" width="8"  height="32" fill="#4a3a7a"/>
+  <rect x="302" y="8"  width="14" height="42" fill="#7a5a10"/>
+  <rect x="318" y="16" width="10" height="34" fill="#2a4a2a"/>
+  <rect x="330" y="20" width="12" height="30" fill="#8a2a2a"/>
+  <rect x="344" y="10" width="8"  height="40" fill="#1a2a6a"/>
+  <rect x="354" y="18" width="14" height="32" fill="#5a4a20"/>
+  <rect x="370" y="14" width="10" height="36" fill="#3a6a3a"/>
+  <rect x="382" y="20" width="12" height="30" fill="#7a3a5a"/>
+  <rect x="396" y="8"  width="8"  height="42" fill="#4a2a1a"/>
+  <rect x="406" y="16" width="14" height="34" fill="#2a5a7a"/>
+  <rect x="422" y="18" width="10" height="32" fill="#6a4a10"/>
+  <rect x="434" y="10" width="12" height="40" fill="#5a1a3a"/>
+  <rect x="448" y="20" width="8"  height="30" fill="#2a3a5a"/>
+  <rect x="458" y="14" width="22" height="36" fill="#7a5a2a"/>
 
-  <!-- COOPER SILHOUETTE: dark pixel figure in the gap x=210–244, y=80–148 -->
-  <!-- Head (16x16) -->
-  <rect x="215" y="82"  width="16" height="16" fill="#100808"/>
-  <!-- Neck -->
-  <rect x="219" y="98"  width="8"  height="4"  fill="#100808"/>
-  <!-- Body -->
-  <rect x="211" y="102" width="24" height="30" fill="#0e0606"/>
-  <!-- Left arm -->
-  <rect x="203" y="106" width="8"  height="22" fill="#0e0606"/>
-  <!-- Right arm -->
-  <rect x="235" y="106" width="8"  height="22" fill="#0e0606"/>
-  <!-- Legs -->
-  <rect x="213" y="132" width="10" height="16" fill="#0e0606"/>
-  <rect x="225" y="132" width="10" height="16" fill="#0e0606"/>
-  <!-- Warm rim light on Cooper's left edge -->
-  <rect x="211" y="82"  width="2"  height="66" fill="#f5a030" opacity="0.25"/>
-  <rect x="215" y="82"  width="2"  height="16" fill="#f5a030" opacity="0.15"/>
+  <!-- ── SHELF BOARD 2 y=125 ── -->
+  <rect x="0" y="125" width="480" height="7" fill="#4a2e0a"/>
+  <rect x="0" y="125" width="480" height="2" fill="#7a4e2a"/>
+  <rect x="0" y="130" width="480" height="2" fill="#f5a030" opacity="0.07"><animate attributeName="opacity" values="0.05;0.13;0.05" dur="2.8s" repeatCount="indefinite"/></rect>
 
-  <!-- BOOKS: middle row (y: 64 – 152), gap at x=210–244 for Cooper -->
-  <rect x="4"   y="68" width="12" height="84" fill="#2d5a8e"/>
-  <rect x="18"  y="72" width="14" height="80" fill="#8b2a1a"/>
-  <rect x="34"  y="64" width="10" height="88" fill="#1a5c3a"/>
-  <rect x="46"  y="76" width="12" height="76" fill="#5a3e28"/>
-  <rect x="60"  y="68" width="10" height="84" fill="#6b1a6b"/>
-  <rect x="72"  y="72" width="14" height="80" fill="#3a5a2a"/>
-  <rect x="88"  y="64" width="8"  height="88" fill="#7a6020"/>
-  <rect x="98"  y="70" width="12" height="82" fill="#1a3a6a"/>
-  <rect x="112" y="68" width="10" height="84" fill="#8a4a10"/>
-  <rect x="124" y="76" width="14" height="76" fill="#4a7a2a"/>
-  <rect x="140" y="64" width="10" height="88" fill="#5a1a1a"/>
-  <rect x="152" y="70" width="12" height="82" fill="#2a4a7a"/>
-  <rect x="166" y="68" width="10" height="84" fill="#7a3a10"/>
-  <rect x="178" y="76" width="14" height="76" fill="#1a5a3a"/>
-  <rect x="194" y="64" width="16" height="88" fill="#6a2a6a"/>
-  <!-- gap x=210–244 (Cooper is here) -->
-  <rect x="244" y="68" width="12" height="84" fill="#4a3a7a">
+  <!-- COOPER SILHOUETTE (gap x=210–244, middle row) -->
+  <rect x="215" y="64"  width="16" height="13" fill="#100808"/>
+  <rect x="219" y="77"  width="8"  height="3"  fill="#100808"/>
+  <rect x="211" y="80"  width="24" height="22" fill="#0e0606"/>
+  <rect x="203" y="83"  width="8"  height="16" fill="#0e0606"/>
+  <rect x="235" y="83"  width="8"  height="16" fill="#0e0606"/>
+  <rect x="213" y="102" width="10" height="12" fill="#0e0606"/>
+  <rect x="225" y="102" width="10" height="12" fill="#0e0606"/>
+  <!-- Rim light -->
+  <rect x="211" y="64"  width="2"  height="50" fill="#f5a030" opacity="0.28"><animate attributeName="opacity" values="0.2;0.38;0.2" dur="2.8s" repeatCount="indefinite"/></rect>
+  <rect x="215" y="64"  width="2"  height="13" fill="#f5a030" opacity="0.18"/>
+  <!-- Cooper aura -->
+  <ellipse cx="223" cy="93" rx="22" ry="34" fill="url(#cooperAura)">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="2.6s" repeatCount="indefinite"/>
+  </ellipse>
+  <!-- Book spine glow on adjacent books -->
+  <rect x="206" y="57" width="2" height="68" fill="#f5c080" opacity="0.18"><animate attributeName="opacity" values="0.12;0.28;0.12" dur="2.6s" repeatCount="indefinite"/></rect>
+  <rect x="244" y="57" width="2" height="68" fill="#f5c080" opacity="0.15"><animate attributeName="opacity" values="0.10;0.24;0.10" dur="3.0s" repeatCount="indefinite"/></rect>
+
+  <!-- BOOKS: middle row (y: 57–125, gap x=210–244) -->
+  <rect x="4"   y="60" width="12" height="65" fill="#2d5a8e"/>
+  <rect x="18"  y="64" width="14" height="61" fill="#8b2a1a"/>
+  <rect x="34"  y="57" width="10" height="68" fill="#1a5c3a"/>
+  <rect x="46"  y="68" width="12" height="57" fill="#5a3e28"/>
+  <rect x="60"  y="62" width="10" height="63" fill="#6b1a6b"/>
+  <rect x="72"  y="64" width="14" height="61" fill="#3a5a2a"/>
+  <rect x="88"  y="57" width="8"  height="68" fill="#7a6020"/>
+  <rect x="98"  y="62" width="12" height="63" fill="#1a3a6a"/>
+  <rect x="112" y="60" width="10" height="65" fill="#8a4a10"/>
+  <rect x="124" y="68" width="14" height="57" fill="#4a7a2a"/>
+  <rect x="140" y="57" width="10" height="68" fill="#5a1a1a"/>
+  <rect x="152" y="62" width="12" height="63" fill="#2a4a7a"/>
+  <rect x="166" y="60" width="10" height="65" fill="#7a3a10"/>
+  <rect x="178" y="68" width="14" height="57" fill="#1a5a3a"/>
+  <rect x="194" y="57" width="16" height="68" fill="#6a2a6a"/>
+  <!-- gap x=210–244 -->
+  <rect x="244" y="60" width="12" height="65" fill="#4a3a7a">
     <animateTransform attributeName="transform" type="translate" values="0,0;0,-6;0,0" dur="2.4s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
   </rect>
-  <rect x="258" y="72" width="10" height="80" fill="#7a5a10"/>
-  <rect x="270" y="64" width="14" height="88" fill="#2a6a3a"/>
-  <rect x="286" y="76" width="10" height="76" fill="#8a2a2a">
+  <rect x="258" y="64" width="10" height="61" fill="#7a5a10"/>
+  <rect x="270" y="57" width="14" height="68" fill="#2a6a3a"/>
+  <rect x="286" y="68" width="10" height="57" fill="#8a2a2a">
     <animateTransform attributeName="transform" type="translate" values="0,0;0,-8;0,0" dur="3.6s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
   </rect>
-  <rect x="298" y="68" width="12" height="84" fill="#1a4a7a"/>
-  <rect x="312" y="64" width="14" height="88" fill="#5a4a20"/>
-  <rect x="328" y="72" width="10" height="80" fill="#3a6a3a">
+  <rect x="298" y="60" width="12" height="65" fill="#1a4a7a"/>
+  <rect x="312" y="57" width="14" height="68" fill="#5a4a20"/>
+  <rect x="328" y="64" width="10" height="61" fill="#3a6a3a">
     <animateTransform attributeName="transform" type="translate" values="0,0;0,-5;0,0" dur="4.2s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
   </rect>
-  <rect x="340" y="68" width="12" height="84" fill="#7a3a5a"/>
-  <rect x="354" y="76" width="10" height="76" fill="#4a2a1a"/>
-  <rect x="366" y="64" width="14" height="88" fill="#2a5a7a"/>
-  <rect x="382" y="70" width="10" height="82" fill="#6a4a10"/>
-  <rect x="394" y="68" width="12" height="84" fill="#5a1a3a"/>
-  <rect x="408" y="76" width="8"  height="76" fill="#2a3a5a"/>
-  <rect x="418" y="64" width="14" height="88" fill="#7a5a2a"/>
-  <rect x="434" y="70" width="10" height="82" fill="#3a1a5a"/>
-  <rect x="446" y="68" width="12" height="84" fill="#4a6a2a"/>
-  <rect x="460" y="76" width="20" height="76" fill="#7a2a2a"/>
+  <rect x="340" y="60" width="12" height="65" fill="#7a3a5a"/>
+  <rect x="354" y="68" width="10" height="57" fill="#4a2a1a"/>
+  <rect x="366" y="57" width="14" height="68" fill="#2a5a7a"/>
+  <rect x="382" y="62" width="10" height="63" fill="#6a4a10"/>
+  <rect x="394" y="60" width="12" height="65" fill="#5a1a3a"/>
+  <rect x="408" y="68" width="8"  height="57" fill="#2a3a5a"/>
+  <rect x="418" y="57" width="14" height="68" fill="#7a5a2a"/>
+  <rect x="434" y="62" width="10" height="63" fill="#3a1a5a"/>
+  <rect x="446" y="60" width="12" height="65" fill="#4a6a2a"/>
+  <rect x="460" y="68" width="20" height="57" fill="#7a2a2a"/>
 
-  <!-- ── SHELF BOARD 3 (bottom) y=248 ── -->
-  <rect x="0" y="248" width="480" height="8" fill="#4a2e0a"/>
-  <rect x="0" y="248" width="480" height="2" fill="#7a4e2a"/>
+  <!-- ── SHELF BOARD 3 y=202 ── -->
+  <rect x="0" y="202" width="480" height="8" fill="#4a2e0a"/>
+  <rect x="0" y="202" width="480" height="2" fill="#7a4e2a"/>
 
-  <!-- BOOKS: bottom row (y: 164 – 248) -->
-  <rect x="4"   y="172" width="14" height="76" fill="#8b1a1a"/>
-  <rect x="20"  y="168" width="10" height="80" fill="#2d5a8e"/>
-  <rect x="32"  y="176" width="12" height="72" fill="#1a5c3a"/>
-  <rect x="46"  y="164" width="14" height="84" fill="#5a3e28"/>
-  <rect x="62"  y="172" width="10" height="76" fill="#6b1a6b"/>
-  <rect x="74"  y="168" width="12" height="80" fill="#7a6020"/>
-  <rect x="88"  y="176" width="8"  height="72" fill="#3a5a2a"/>
-  <rect x="98"  y="164" width="14" height="84" fill="#1a3a6a"/>
-  <rect x="114" y="172" width="10" height="76" fill="#8a4a10"/>
-  <rect x="126" y="168" width="12" height="80" fill="#4a7a2a"/>
-  <rect x="140" y="176" width="10" height="72" fill="#7a1a1a"/>
-  <rect x="152" y="164" width="14" height="84" fill="#2a4a7a"/>
-  <rect x="168" y="172" width="10" height="76" fill="#6a5a20"/>
-  <rect x="180" y="168" width="12" height="80" fill="#5a2a5a"/>
-  <rect x="194" y="176" width="8"  height="72" fill="#2a6a3a"/>
-  <rect x="204" y="164" width="14" height="84" fill="#7a3a10"/>
-  <rect x="220" y="172" width="10" height="76" fill="#1a5a8a"/>
-  <rect x="232" y="168" width="12" height="80" fill="#5a4a10"/>
-  <rect x="246" y="176" width="14" height="72" fill="#3a2a6a"/>
-  <rect x="262" y="164" width="10" height="84" fill="#7a4a2a"/>
-  <rect x="274" y="172" width="12" height="76" fill="#2a5a2a"/>
-  <rect x="288" y="168" width="8"  height="80" fill="#8a2a4a"/>
-  <rect x="298" y="176" width="14" height="72" fill="#1a3a5a"/>
-  <rect x="314" y="164" width="10" height="84" fill="#6a5a2a"/>
-  <rect x="326" y="172" width="12" height="76" fill="#4a1a4a"/>
-  <rect x="340" y="168" width="10" height="80" fill="#2a6a4a"/>
-  <rect x="352" y="176" width="14" height="72" fill="#7a3a2a"/>
-  <rect x="368" y="164" width="10" height="84" fill="#1a4a6a"/>
-  <rect x="380" y="172" width="12" height="76" fill="#5a4a1a"/>
-  <rect x="394" y="168" width="8"  height="80" fill="#3a1a4a"/>
-  <rect x="404" y="176" width="14" height="72" fill="#6a3a1a"/>
-  <rect x="420" y="164" width="10" height="84" fill="#2a4a6a"/>
-  <rect x="432" y="172" width="12" height="76" fill="#7a5a2a"/>
-  <rect x="446" y="168" width="10" height="80" fill="#4a2a5a"/>
-  <rect x="458" y="176" width="22" height="72" fill="#2a5a3a"/>
+  <!-- BOOKS: bottom row (y: 132–202) -->
+  <rect x="4"   y="138" width="14" height="64" fill="#8b1a1a"/>
+  <rect x="20"  y="132" width="10" height="70" fill="#2d5a8e"/>
+  <rect x="32"  y="142" width="12" height="60" fill="#1a5c3a"/>
+  <rect x="46"  y="132" width="14" height="70" fill="#5a3e28"/>
+  <rect x="62"  y="138" width="10" height="64" fill="#6b1a6b"/>
+  <rect x="74"  y="134" width="12" height="68" fill="#7a6020"/>
+  <rect x="88"  y="142" width="8"  height="60" fill="#3a5a2a"/>
+  <rect x="98"  y="132" width="14" height="70" fill="#1a3a6a"/>
+  <rect x="114" y="138" width="10" height="64" fill="#8a4a10"/>
+  <rect x="126" y="134" width="12" height="68" fill="#4a7a2a"/>
+  <rect x="140" y="142" width="10" height="60" fill="#7a1a1a"/>
+  <rect x="152" y="132" width="14" height="70" fill="#2a4a7a"/>
+  <rect x="168" y="138" width="10" height="64" fill="#6a5a20"/>
+  <rect x="180" y="134" width="12" height="68" fill="#5a2a5a"/>
+  <rect x="194" y="142" width="8"  height="60" fill="#2a6a3a"/>
+  <rect x="204" y="132" width="14" height="70" fill="#7a3a10"/>
+  <rect x="220" y="138" width="10" height="64" fill="#1a5a8a"/>
+  <rect x="232" y="134" width="12" height="68" fill="#5a4a10"/>
+  <rect x="246" y="142" width="14" height="60" fill="#3a2a6a"/>
+  <rect x="262" y="132" width="10" height="70" fill="#7a4a2a"/>
+  <rect x="274" y="138" width="12" height="64" fill="#2a5a2a"/>
+  <rect x="288" y="134" width="8"  height="68" fill="#8a2a4a"/>
+  <rect x="298" y="142" width="14" height="60" fill="#1a3a5a"/>
+  <rect x="314" y="132" width="10" height="70" fill="#6a5a2a"/>
+  <rect x="326" y="138" width="12" height="64" fill="#4a1a4a"/>
+  <rect x="340" y="134" width="10" height="68" fill="#2a6a4a"/>
+  <rect x="352" y="142" width="14" height="60" fill="#7a3a2a"/>
+  <rect x="368" y="132" width="10" height="70" fill="#1a4a6a"/>
+  <rect x="380" y="138" width="12" height="64" fill="#5a4a1a"/>
+  <rect x="394" y="134" width="8"  height="68" fill="#3a1a4a"/>
+  <rect x="404" y="142" width="14" height="60" fill="#6a3a1a"/>
+  <rect x="420" y="132" width="10" height="70" fill="#2a4a6a"/>
+  <rect x="432" y="138" width="12" height="64" fill="#7a5a2a"/>
+  <rect x="446" y="134" width="10" height="68" fill="#4a2a5a"/>
+  <rect x="458" y="142" width="22" height="60" fill="#2a5a3a"/>
 
-  <!-- Floating dust particles -->
-  <circle cx="160" cy="95"  r="1.5" fill="#f5d090" opacity="0">
-    <animate attributeName="cy"      values="95;72;95"   dur="4s"   repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0;0.55;0"   dur="4s"   repeatCount="indefinite"/>
-  </circle>
-  <circle cx="278" cy="108" r="1"   fill="#f5d090" opacity="0">
-    <animate attributeName="cy"      values="108;82;108" dur="5.2s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0;0.45;0"   dur="5.2s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="320" cy="85"  r="1.5" fill="#f5d090" opacity="0">
-    <animate attributeName="cy"      values="85;60;85"   dur="3.6s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0;0.65;0"   dur="3.6s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="188" cy="118" r="1"   fill="#f5d090" opacity="0">
-    <animate attributeName="cy"      values="118;90;118" dur="6s"   repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0;0.4;0"    dur="6s"   repeatCount="indefinite"/>
-  </circle>
-  <circle cx="355" cy="100" r="1"   fill="#f5d090" opacity="0">
-    <animate attributeName="cy"      values="100;75;100" dur="4.8s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0;0.5;0"    dur="4.8s" repeatCount="indefinite"/>
-  </circle>
-
-  <!-- Cooper warm rim-light pulse -->
-  <ellipse cx="223" cy="118" rx="18" ry="38" fill="#f5a030" opacity="0.06">
-    <animate attributeName="opacity" values="0.04;0.11;0.04" dur="2.8s" repeatCount="indefinite"/>
-  </ellipse>
+  <!-- Dust particles (more, varied) -->
+  <circle cx="80"  cy="80"  r="1"   fill="#f5d090" opacity="0"><animate attributeName="cy" values="80;58;80"   dur="5.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.45;0" dur="5.5s" repeatCount="indefinite"/></circle>
+  <circle cx="160" cy="72"  r="1.5" fill="#f5d090" opacity="0"><animate attributeName="cy" values="72;50;72"   dur="4.0s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.55;0" dur="4.0s" repeatCount="indefinite"/></circle>
+  <circle cx="192" cy="92"  r="1"   fill="#f5e0b0" opacity="0"><animate attributeName="cy" values="92;68;92"   dur="6.2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.40;0" dur="6.2s" repeatCount="indefinite"/></circle>
+  <circle cx="260" cy="84"  r="1.5" fill="#f5d090" opacity="0"><animate attributeName="cy" values="84;60;84"   dur="3.8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.60;0" dur="3.8s" repeatCount="indefinite"/></circle>
+  <circle cx="305" cy="68"  r="1"   fill="#f5d090" opacity="0"><animate attributeName="cy" values="68;45;68"   dur="4.8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.50;0" dur="4.8s" repeatCount="indefinite"/></circle>
+  <circle cx="355" cy="78"  r="1.5" fill="#f5e0b0" opacity="0"><animate attributeName="cy" values="78;55;78"   dur="3.4s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.65;0" dur="3.4s" repeatCount="indefinite"/></circle>
+  <circle cx="420" cy="90"  r="1"   fill="#f5d090" opacity="0"><animate attributeName="cy" values="90;65;90"   dur="5.1s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.45;0" dur="5.1s" repeatCount="indefinite"/></circle>
+  <circle cx="230" cy="105" r="1"   fill="#f5d090" opacity="0"><animate attributeName="cy" values="105;80;105" dur="6.8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.35;0" dur="6.8s" repeatCount="indefinite"/></circle>
+  <circle cx="130" cy="88"  r="1"   fill="#f5e0b0" opacity="0"><animate attributeName="cy" values="88;64;88"   dur="4.3s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.40;0" dur="4.3s" repeatCount="indefinite"/></circle>
 </svg>
