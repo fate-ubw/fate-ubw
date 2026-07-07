@@ -1,4 +1,4 @@
-<svg width="900" height="130" viewBox="0 0 900 130" xmlns="http://www.w3.org/2000/svg">
+<svg width="900" height="150" viewBox="0 0 900 150" xmlns="http://www.w3.org/2000/svg">
   <style>
     .card-bg { fill: none; }
     .card-border-1 { stroke: #8A2BE2; stroke-width: 1.5; fill: none; }
@@ -14,21 +14,31 @@
     }
   </style>
 
-  <!-- Card 1: Web Agent & Computer Use -->
-  <rect class="card-border-2" x="2" y="2" width="282" height="116" rx="10"/>
-  <text class="title" x="143" y="46" text-anchor="middle" fill="#0078D4">Web Agent &amp; Computer Use</text>
-  <text class="desc"  x="143" y="70" text-anchor="middle">Autonomous agents that navigate</text>
-  <text class="desc"  x="143" y="88" text-anchor="middle">and operate real-world interfaces</text>
+  <!-- Card 1: Long-Horizon Agentic Tasks -->
+  <rect class="card-border-2" x="2" y="2" width="210" height="136" rx="10"/>
+  <text class="title" x="107" y="42" text-anchor="middle" fill="#0078D4">Long-Horizon Tasks</text>
+  <text class="desc"  x="107" y="66" text-anchor="middle">SWE and DeepResearch-style</text>
+  <text class="desc"  x="107" y="84" text-anchor="middle">composite tasks for agents</text>
+  <text class="desc"  x="107" y="102" text-anchor="middle">including code benchmarks</text>
 
-  <!-- Card 2: Proactive Agent -->
-  <rect class="card-border-3" x="309" y="2" width="282" height="116" rx="10"/>
-  <text class="title" x="450" y="46" text-anchor="middle" fill="#2E8B57">Proactive Agent</text>
-  <text class="desc"  x="450" y="70" text-anchor="middle">Understanding what humans are doing</text>
-  <text class="desc"  x="450" y="88" text-anchor="middle">and acting before being asked</text>
+  <!-- Card 2: Code & SWE Agents -->
+  <rect class="card-border-3" x="230" y="2" width="210" height="136" rx="10"/>
+  <text class="title" x="335" y="42" text-anchor="middle" fill="#2E8B57">Code &amp; SWE Agents</text>
+  <text class="desc"  x="335" y="66" text-anchor="middle">ProgramBench-like tasks</text>
+  <text class="desc"  x="335" y="84" text-anchor="middle">for reasoning, editing,</text>
+  <text class="desc"  x="335" y="102" text-anchor="middle">and verification</text>
 
-  <!-- Card 3: Multimodal RAG -->
-  <rect class="card-border-1" x="616" y="2" width="282" height="116" rx="10"/>
-  <text class="title" x="757" y="46" text-anchor="middle" fill="#8A2BE2">Multimodal RAG</text>
-  <text class="desc"  x="757" y="70" text-anchor="middle">Retrieval-Augmented Generation</text>
-  <text class="desc"  x="757" y="88" text-anchor="middle">across text, image, and beyond</text>
+  <!-- Card 3: GUI & Web Agent -->
+  <rect class="card-border-2" x="458" y="2" width="210" height="136" rx="10"/>
+  <text class="title" x="563" y="42" text-anchor="middle" fill="#0078D4">GUI &amp; Web Agent</text>
+  <text class="desc"  x="563" y="66" text-anchor="middle">Agents that navigate</text>
+  <text class="desc"  x="563" y="84" text-anchor="middle">real interfaces and</text>
+  <text class="desc"  x="563" y="102" text-anchor="middle">the open web</text>
+
+  <!-- Card 4: Multimodal Retrieval -->
+  <rect class="card-border-1" x="686" y="2" width="210" height="136" rx="10"/>
+  <text class="title" x="791" y="42" text-anchor="middle" fill="#8A2BE2">Multimodal Retrieval</text>
+  <text class="desc"  x="791" y="66" text-anchor="middle">RAG over text, image,</text>
+  <text class="desc"  x="791" y="84" text-anchor="middle">documents, and beyond</text>
+  <text class="desc"  x="791" y="102" text-anchor="middle">with RAGLAB</text>
 </svg>

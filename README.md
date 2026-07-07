@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=6E40C9&center=true&vCenter=true&width=600&lines=Hi+there%2C+I'm+Jim+Zhang+%F0%9F%91%8B;Zhang+Xuanwang+%C2%B7+%E5%BC%A0%E8%BD%A9%E6%9C%9B;PhD+Researcher+%40+NJU+AI;Building+Smarter+Agents+%F0%9F%A4%96" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=6E40C9&center=true&vCenter=true&width=600&lines=Hi+there%2C+I'm+Jim+Zhang+%F0%9F%91%8B;Zhang+Xuanwang+%C2%B7+%E5%BC%A0%E8%BD%A9%E6%9C%9B;PhD+Researcher+%40+NJU+AI;Long-Horizon+Agents+%26+RAG" alt="Typing SVG" />
 
 <br/>
 
@@ -17,9 +17,11 @@
 
 ### About Me
 
-I'm **Jim (Zhang Xuanwang / 张轩望)**, a first-year PhD student at the [School of Artificial Intelligence, Nanjing University](https://www.nju.edu.cn/en/). Before this, I received my Master's degree from the [University of Chinese Academy of Sciences (UCAS)](https://www.ucas.ac.cn/) in 2025, where I was trained at the [Institute of Acoustics, Chinese Academy of Sciences (IAIS, CAS)](http://www.ioa.cas.cn/).
+I'm **Jim (Zhang Xuanwang / 张轩望)**, a first-year PhD student at the [School of Artificial Intelligence, Nanjing University](https://www.nju.edu.cn/en/), advised by [Prof. Zhen Wu](https://wuzhen247.github.io/) and [Prof. Xinyu Dai](https://ai.nju.edu.cn/daixinyu/). Before this, I received my Master's degree from the [University of Chinese Academy of Sciences (UCAS)](https://www.ucas.ac.cn/) in 2025, where I was trained at the [Institute of Acoustics, Chinese Academy of Sciences (IAIS, CAS)](http://www.ioa.cas.cn/).
 
-I'm genuinely passionate about building intelligent systems that can perceive, reason, and act — and I love talking about research, ideas, and everything in between. Feel free to reach out or open an issue!
+My current research focuses on long-horizon composite tasks for SWE and DeepResearch-style agents, GUI/Web agents, and multimodal retrieval. Recently, I have been thinking about code-agent tasks like ProgramBench, as well as new web-agent paradigms through [webNavigator](https://github.com/fate-ubw/webNavigator). I also build and maintain [RAGLAB](https://github.com/fate-ubw/RAGLAB), a toolkit for retrieval-augmented generation research.
+
+I'm genuinely passionate about building intelligent systems that can perceive, reason, and act. Feel free to reach out or open an issue!
 
 > *"From scratch, every time — that's how you learn what actually matters."*
 
