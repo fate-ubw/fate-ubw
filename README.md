@@ -35,17 +35,13 @@ I'm genuinely passionate about building intelligent systems that can perceive, r
 
 <table width="100%">
   <tr>
-    <td width="45%" valign="top">
+    <td valign="top">
       <h3>Let's Connect</h3>
       <p>I enjoy talking about research, new ideas, random tech rabbit holes, and pretty much anything. Don't hesitate to drop me a message — I'm always happy to chat!</p>
       <ul>
         <li>📬 <b>Email:</b> <a href="mailto:zhangxuanwang@smail.nju.edu.cn">zhangxuanwang@smail.nju.edu.cn</a></li>
         <li>💬 <b>Open an issue</b> on this repo to start a conversation</li>
       </ul>
-    </td>
-    <td width="55%" valign="top">
-      <h3>GitHub Stats</h3>
-      <img src="https://github-readme-stats.vercel.app/api?username=fate-ubw&show_icons=true&theme=default&hide_border=true&include_all_commits=true&count_private=true" width="100%" />
     </td>
   </tr>
 </table>
