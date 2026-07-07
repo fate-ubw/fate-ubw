@@ -21,24 +21,24 @@
   <text class="desc"  x="107" y="84" text-anchor="middle">from scratch to tested,</text>
   <text class="desc"  x="107" y="102" text-anchor="middle">deployable software</text>
 
-  <!-- Card 2: Code & SWE Agents -->
+  <!-- Card 2: GUI & Web Agent -->
   <rect class="card-border-3" x="230" y="2" width="210" height="136" rx="10"/>
-  <text class="title" x="335" y="42" text-anchor="middle" fill="#2E8B57">Code &amp; SWE Agents</text>
-  <text class="desc"  x="335" y="66" text-anchor="middle">ProgramBench-like tasks</text>
-  <text class="desc"  x="335" y="84" text-anchor="middle">for reasoning, editing,</text>
-  <text class="desc"  x="335" y="102" text-anchor="middle">and verification</text>
+  <text class="title" x="335" y="42" text-anchor="middle" fill="#2E8B57">GUI &amp; Web Agent</text>
+  <text class="desc"  x="335" y="66" text-anchor="middle">Agents that navigate</text>
+  <text class="desc"  x="335" y="84" text-anchor="middle">real interfaces and</text>
+  <text class="desc"  x="335" y="102" text-anchor="middle">the open web</text>
 
-  <!-- Card 3: GUI & Web Agent -->
+  <!-- Card 3: Multimodal Retrieval -->
   <rect class="card-border-2" x="458" y="2" width="210" height="136" rx="10"/>
-  <text class="title" x="563" y="42" text-anchor="middle" fill="#0078D4">GUI &amp; Web Agent</text>
-  <text class="desc"  x="563" y="66" text-anchor="middle">Agents that navigate</text>
-  <text class="desc"  x="563" y="84" text-anchor="middle">real interfaces and</text>
-  <text class="desc"  x="563" y="102" text-anchor="middle">the open web</text>
+  <text class="title" x="563" y="42" text-anchor="middle" fill="#0078D4">Multimodal Retrieval</text>
+  <text class="desc"  x="563" y="66" text-anchor="middle">RAG over text, image,</text>
+  <text class="desc"  x="563" y="84" text-anchor="middle">documents, and beyond</text>
+  <text class="desc"  x="563" y="102" text-anchor="middle">with RAGLAB</text>
 
-  <!-- Card 4: Multimodal Retrieval -->
+  <!-- Card 4: Proactive Agent -->
   <rect class="card-border-1" x="686" y="2" width="210" height="136" rx="10"/>
-  <text class="title" x="791" y="42" text-anchor="middle" fill="#8A2BE2">Multimodal Retrieval</text>
-  <text class="desc"  x="791" y="66" text-anchor="middle">RAG over text, image,</text>
-  <text class="desc"  x="791" y="84" text-anchor="middle">documents, and beyond</text>
-  <text class="desc"  x="791" y="102" text-anchor="middle">with RAGLAB</text>
+  <text class="title" x="791" y="42" text-anchor="middle" fill="#8A2BE2">Proactive Agent</text>
+  <text class="desc"  x="791" y="66" text-anchor="middle">Understanding human intent</text>
+  <text class="desc"  x="791" y="84" text-anchor="middle">and acting before</text>
+  <text class="desc"  x="791" y="102" text-anchor="middle">being asked</text>
 </svg>
