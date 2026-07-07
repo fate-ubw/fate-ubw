@@ -14,12 +14,12 @@
     }
   </style>
 
-  <!-- Card 1: Long-Horizon Agentic Tasks -->
+  <!-- Card 1: Long-Horizon SWE Agents -->
   <rect class="card-border-2" x="2" y="2" width="210" height="136" rx="10"/>
-  <text class="title" x="107" y="42" text-anchor="middle" fill="#0078D4">Long-Horizon Tasks</text>
-  <text class="desc"  x="107" y="66" text-anchor="middle">SWE and DeepResearch-style</text>
-  <text class="desc"  x="107" y="84" text-anchor="middle">composite tasks for agents</text>
-  <text class="desc"  x="107" y="102" text-anchor="middle">including code benchmarks</text>
+  <text class="title" x="107" y="42" text-anchor="middle" fill="#0078D4">Long-Horizon SWE Agents</text>
+  <text class="desc"  x="107" y="66" text-anchor="middle">Multimodal coding tasks</text>
+  <text class="desc"  x="107" y="84" text-anchor="middle">from scratch to tested,</text>
+  <text class="desc"  x="107" y="102" text-anchor="middle">deployable software</text>
 
   <!-- Card 2: Code & SWE Agents -->
   <rect class="card-border-3" x="230" y="2" width="210" height="136" rx="10"/>
