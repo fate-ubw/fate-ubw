@@ -29,7 +29,7 @@ I'm genuinely passionate about building intelligent systems that can perceive, r
 
 ### Research Interests
 
-<img src="assets/research-v2.svg" width="100%" />
+<img src="assets/research-v2.svg?v=20260707" width="100%" />
 
 ---
 
