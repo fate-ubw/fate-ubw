@@ -19,17 +19,9 @@
 
 I'm **Jim (Zhang Xuanwang / 张轩望)**, a first-year PhD student at the [School of Artificial Intelligence, Nanjing University](https://www.nju.edu.cn/en/), working with [Prof. Zhen Wu](https://wuzhen247.github.io/) and [Prof. Xinyu Dai](https://ai.nju.edu.cn/daixinyu/). Before this, I received my Master's degree from the [University of Chinese Academy of Sciences (UCAS)](https://www.ucas.ac.cn/) in 2025, where I was trained at the [Institute of Acoustics, Chinese Academy of Sciences (IAIS, CAS)](http://www.ioa.cas.cn/).
 
-My current research focuses on long-horizon multimodal SWE tasks, DeepResearch-style agents, GUI/Web agents, and multimodal retrieval. Recently, I have been thinking about code-agent tasks like ProgramBench, where agents build production-grade software from scratch through planning, coding, testing, and verification. I also explore new web-agent paradigms through [webNavigator](https://github.com/fate-ubw/webNavigator), and build [RAGLAB](https://github.com/fate-ubw/RAGLAB), a toolkit for retrieval-augmented generation research.
-
 I'm genuinely passionate about building intelligent systems that can perceive, reason, and act. Feel free to reach out or open an issue!
 
 > *"From scratch, every time — that's how you learn what actually matters."*
-
----
-
-### Research Interests
-
-<img src="assets/research-v2.svg?v=20260707" width="100%" />
 
 ---
 
